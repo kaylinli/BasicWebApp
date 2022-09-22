@@ -11,20 +11,21 @@ public class QueryProcessor {
             for (String s : parts) {
                 if (Character.isDigit(s.charAt(0))) 
                     nums.add(Integer.parseInt(s));
-            } Collections.sort(nums);
-            return Integer.toString(nums.get(nums.size() - 1));
+            // } Collections.sort(nums);
+            // return Integer.toString(nums.get(nums.size() - 1));
+            return Arrays.toString(nums.toArray());
         }
         if (query.toLowerCase().contains("bond")) {
             return "Sean Connery";
         }
-        if (query.toLowerCase().contains("primes")) {
-            String[] parts = query.split(" "); 
-            ArrayList<Integer> nums = new ArrayList<Integer>();
-            for (String s : parts) {
-                if (Character.isDigit(s.charAt(0))) 
-                    nums.add(Integer.parseInt(s));
-            } Collections.sort(nums);
-            return Integer.toString(nums.get(nums.size() - 1));
+        // if (query.toLowerCase().contains("primes")) {
+        //     String[] parts = query.split(" "); 
+        //     ArrayList<Integer> nums = new ArrayList<Integer>();
+        //     for (String s : parts) {
+        //         if (Character.isDigit(s.charAt(0))) 
+        //             nums.add(Integer.parseInt(s));
+        //     } Collections.sort(nums);
+        //     return Integer.toString(nums.get(nums.size() - 1));
 
             
         }
