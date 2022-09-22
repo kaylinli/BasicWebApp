@@ -13,6 +13,18 @@ public class QueryProcessor {
                     nums.add(Integer.parseInt(s));
             } Collections.sort(nums);
             return Integer.toString(nums.get(nums.size() - 1));
+        }
+        if (query.toLowerCase().contains("james%20bond")) {
+            return "Sean Connery";
+        }
+        if (query.toLowerCase().contains("primes")) {
+            String[] parts = query.split("%20"); 
+            ArrayList<Integer> nums = new ArrayList<Integer>();
+            for (String s : parts) {
+                if (Character.isDigit(s.charAt(0))) 
+                    nums.add(Integer.parseInt(s));
+            } Collections.sort(nums);
+            return Integer.toString(nums.get(nums.size() - 1));
 
             
         }
