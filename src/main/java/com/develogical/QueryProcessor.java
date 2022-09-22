@@ -14,7 +14,7 @@ public class QueryProcessor {
             } Collections.sort(nums);
             return Integer.toString(nums.get(nums.size() - 1));
         }
-        if (query.toLowerCase().contains("james%20bond")) {
+        if (query.toLowerCase().contains("bond")) {
             return "Sean Connery";
         }
         if (query.toLowerCase().contains("primes")) {
